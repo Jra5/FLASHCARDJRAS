@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import './Card.cs';
+import './Card.css';
 
 const Card = (props) => (
     <div className="contenedorcarta">
         <div className="carta">
+
             <div className="front">
-                <div className="texto">
-                    {props.texto}
+                <div className="imagen">
+                    {props.nombre};
+                    {props.imagen};
                 </div>
             </div>
-            <div className="back">
-                <div className="imagen">
 
+            <div className="back">
+                <div className="texto">
+                    <h1>¿Sabías qué?</h1> 
+                    {props.texto};
                 </div>
             </div>
         </div>
